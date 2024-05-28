@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping("/products")
@@ -36,8 +35,6 @@ public class ProductController {
     /**
      * Inserindo um objeto no banco de dados, retornando o objeto, sua URI de criação e
      * o código 201 CREATED
-     * @param dto
-     * @return
      */
     @PostMapping()
     public ResponseEntity<ProductDTO> insert(@RequestBody ProductDTO dto) {
